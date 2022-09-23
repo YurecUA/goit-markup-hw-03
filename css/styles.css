@@ -175,13 +175,16 @@ gap: 50px;
 }
 
 .order-section {
+  margin: auto;
+  max-width: 1600px;
   text-align: center;
   padding: 200px 0;
   background-color: var(--gunmetal-color);
 }
 
 .order-section-header {
-  margin: 0, auto, 30px;
+  display: block;
+  margin: 0 auto 30px;
   width: 696px;
   font-weight: 900;
   font-size: 44px;
@@ -238,7 +241,7 @@ gap: 50px;
 
 .feature-text {
   line-height: 1.71;
-  margin: 10px, 0, 0;
+  margin: 10px 0 0;
 
   font-style: normal;
 
