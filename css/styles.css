@@ -23,7 +23,13 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+  box-sizing: border-box;
 }
+
+.section {
+  padding: 94px 0;
+}
+
 
 .visually-hidden {
   position: absolute;
@@ -47,7 +53,22 @@ body {
 .navigation-list,
 .footer-contact-list,
 .header-contact-list {
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+.h1, .h2, .h3, .p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  outline: 2px solid tomato;
 }
 
 /* Header */
@@ -63,10 +84,12 @@ body {
 
   color: var(--black-color);
   cursor: default;
+  outline: 2px solid tomato;
 }
 
 .web {
   color: var(--azure-color);
+  outline: 2px solid tomato;
 }
 
 /* Main page */
@@ -79,6 +102,7 @@ body {
   text-decoration: none;
 
   color: var(--darkjunglegreen-color);
+  outline: 2px solid tomato;
 }
 
 .nav:hover,
@@ -94,6 +118,7 @@ body {
   text-decoration: none;
 
   color: var(--azure-color);
+  outline: 2px solid tomato;
 }
 
 .nav-current:hover,
@@ -108,6 +133,7 @@ body {
   text-decoration: none;
 
   color: var(--boulder-color);
+  outline: 2px solid tomato;
 }
 
 .header-contact-element:hover,
@@ -116,19 +142,23 @@ body {
 }
 
 .order-section {
+  text-align: center;
   background-color: var(--gunmetal-color);
+  outline: 2px solid tomato;
 }
 
 .order-section-header {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
 
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: var(--white-color);
+  outline: 2px solid tomato;
 }
 
 .order-section-button {
@@ -137,10 +167,16 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: none;
 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--white-color);
   background-color: var(--azure-color);
   cursor: pointer;
+  outline: 2px solid tomato;
 }
 
 .order-section-button:hover,
@@ -156,6 +192,7 @@ body {
   text-transform: uppercase;
 
   color: var(--darkjunglegreen-color);
+  outline: 2px solid tomato;
 }
 
 .feature-text {
@@ -164,6 +201,7 @@ body {
   font-style: normal;
 
   color: var(--boulder-color);
+  outline: 2px solid tomato;
 }
 
 .example-header,
@@ -174,10 +212,12 @@ body {
   text-align: center;
 
   color: var(--darkjunglegreen-color);
+  outline: 2px solid tomato;
 }
 
 .team-section {
   background-color: var(--ghostwhite-color);
+  outline: 2px solid tomato;
 }
 
 .team-person-name {
@@ -188,6 +228,7 @@ body {
   text-align: center;
 
   color: var(--darkjunglegreen-color);
+  outline: 2px solid tomato;
 }
 
 .team-person-position {
@@ -198,11 +239,13 @@ body {
   font-style: normal;
 
   color: var(--boulder-color);
+  outline: 2px solid tomato;
 }
 
 /* Portfolio page */
 .portfolio-main {
   border-top: 1px solid var(--white-color);
+  outline: 2px solid tomato;
 }
 
 .filter-button {
@@ -211,13 +254,17 @@ body {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  text-align: center;
 
   border-radius: 4px;
+  padding: 6px 22px;
 
   color: var(--darkjunglegreen-color);
   background-color: var(--ghostwhite-color);
   border: none;
+  outline: 2px solid tomato;
 }
+
 .filter-button:hover,
 .filter-button:focus {
   color: var(--white-color);
@@ -225,8 +272,33 @@ body {
   cursor: pointer;
 }
 
+.filter-button-active {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  border-radius: 4px;
+  padding: 6px 25px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); 
+
+  color: var(--white-color);
+  background-color: var(--azure-color);
+  border: none;
+  outline: 2px solid tomato;
+}
+
+.filter-button-active:hover,
+.filter-button-active:focus {
+  background-color: #007ec7;
+  cursor: pointer;
+}
+
 .portfolio-element {
   border: 1px solid var(--dawnpink-color);
+  outline: 2px solid tomato;
 }
 
 .portfolio-element-name {
@@ -236,6 +308,7 @@ body {
   letter-spacing: 0.06em;
 
   color: var(--darkjunglegreen-color);
+  outline: 2px solid tomato;
 }
 
 .portfolio-element-text {
@@ -244,15 +317,18 @@ body {
   font-style: normal;
 
   color: var(--boulder-color);
+  outline: 2px solid tomato;
 }
 /* Footer */
 
 .page-footer {
   background-color: var(--gunmetal-color);
+  outline: 2px solid tomato;
 }
 
 .footer-logo {
   color: var(--white-color);
+  outline: 2px solid tomato;
 }
 
 .footer-adress {
@@ -261,6 +337,7 @@ body {
   font-style: normal;
 
   color: var(--white-color);
+  outline: 2px solid tomato;
 }
 
 .footer-contact-element {
@@ -270,8 +347,10 @@ body {
   font-style: normal;
 
   color: var(--rgbawhitehigh-color);
+  outline: 2px solid tomato;
 }
 
-.footer-contact-element:hover .footer-contact-element:focus {
+.footer-contact-element:hover 
+.footer-contact-element:focus {
   color: var(--azure-color);
 }
