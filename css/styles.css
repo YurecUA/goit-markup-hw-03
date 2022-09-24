@@ -56,7 +56,11 @@ body {
   list-style: none;
 }
 
-.ul .h1, .h2, .h3, .p {
+.ul,
+.h1,
+.h2,
+.h3,
+.p {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
@@ -111,7 +115,7 @@ img {
 .nav-list {
   margin-left: 93px;
   display: flex;
-gap: 50px;
+  gap: 50px;
 }
 
 .header-contact-list {
@@ -189,7 +193,6 @@ gap: 50px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
- 
 
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -203,7 +206,7 @@ gap: 50px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  
+
   border-radius: 4px;
   padding: 10px 32px;
   border: none;
@@ -279,9 +282,8 @@ gap: 50px;
 
 .team-element {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
-
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-person-name {
@@ -351,7 +353,8 @@ border-radius: 0px 0px 4px 4px;
 
   border-radius: 4px;
   padding: 6px 25px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); 
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 
   color: var(--white-color);
   background-color: var(--azure-color);
@@ -369,9 +372,9 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .portfolio-list {
-display: flex;
-flex-wrap: wrap;
-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .portfolio-element {
@@ -442,7 +445,6 @@ gap: 30px;
   color: var(--rgbawhitehigh-color);
 }
 
-.footer-contact-element:hover 
-.footer-contact-element:focus {
+.footer-contact-element:hover .footer-contact-element:focus {
   color: var(--azure-color);
 }
