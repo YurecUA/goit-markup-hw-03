@@ -62,8 +62,8 @@ body {
 .h3,
 .p {
   list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -134,6 +134,7 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding: 32px 0;
 
   text-decoration: none;
 
@@ -149,6 +150,7 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding: 32px 0;
 
   text-decoration: none;
 
@@ -165,6 +167,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding: 32px 0;
 
   color: var(--boulder-color);
 }
@@ -251,6 +254,10 @@ img {
   color: var(--boulder-color);
 }
 
+.examples-section {
+  padding-top: 0;
+}
+
 .example-header,
 .team-header {
   font-weight: 700;
@@ -259,6 +266,10 @@ img {
   text-align: center;
 
   color: var(--darkjunglegreen-color);
+}
+
+.team-section {
+  padding-top: 0;
 }
 
 .team-header {
@@ -284,6 +295,12 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-person-container {
+  padding: 30px 0;
+  margin: 0;
+  background-color: var(--white-color);
 }
 
 .team-person-name {
@@ -417,8 +434,11 @@ img {
   color: var(--white-color);
 }
 
-.footer-adress {
+.footer-contacts {
   margin-top: 20px;
+}
+
+.footer-adress {
   display: block;
   width: 231px;
   height: 21px;
@@ -429,11 +449,10 @@ img {
   color: var(--white-color);
 }
 
-.footer-contact-list {
+.footer-contact-list > li:not(:last-child) {
   display: flex;
   flex-direction: column;
-  margin-top: 9px;
-  gap: 9px;
+  margin-bottom: 9px;
 }
 
 .footer-contact-element {
